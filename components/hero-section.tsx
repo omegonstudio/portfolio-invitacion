@@ -47,7 +47,7 @@ export function HeroSection() {
   />
 </div>
 
-<div className="absolute top-20 right-0 opacity-25 block md:hidden">
+<div className="absolute top-10 right-0 opacity-25 block md:hidden">
   <img
     src="/images/bee-botanical.png"
     alt="Ilustración botánica con abeja"
