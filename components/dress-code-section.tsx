@@ -3,14 +3,16 @@ import { ColorPalette } from "./color-palette"
 
 const colorPalette = [
   { name: "Negro", color: "#000000" },
-  { name: "Verde Oscuro", color: "#2D5016" },
-  { name: "Marrón", color: "#8B4513" },
-  { name: "Mostaza", color: "#FFDB58" },
-  { name: "Terracota", color: "#E2725B" },
-  { name: "Rosado", color: "#FFB6C1" },
-  { name: "Lavanda", color: "#E6E6FA" },
-  { name: "Celeste", color: "#87CEEB" },
-  { name: "Menta", color: "#98FB98" },
+  { name: "Marrón Oscuro", color: "#312817" },
+  { name: "Marrón", color: "#7a4900" },
+  { name: "Verde Oliva", color: "#697b43" },
+  { name: "Verde Bosque", color: "#2e6417" },
+  { name: "Lavanda", color: "#ac9bd1" },
+  { name: "Rosa Suave", color: "#d18ebb" },
+  { name: "Rosa Vibrante", color: "#de5fb2" },
+  { name: "Azul Océano", color: "#0097b2" },
+  { name: "Celeste Claro", color: "#80eef2" },
+  { name: "Naranja", color: "#ff9d09" },
 ]
 
 export function DressCodeSection() {

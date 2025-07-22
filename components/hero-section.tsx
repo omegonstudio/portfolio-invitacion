@@ -3,8 +3,51 @@ import { CountdownTimer } from "./countdown-timer"
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
-      <div className="max-w-4xl mx-auto">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 relative overflow-hidden">
+      {/* Large botanical decorations on sides */}
+      <div className="absolute -left-16 top-1/2 transform -translate-y-1/4 opacity-40 hidden lg:block">
+        <img
+          src="/images/spring-flowers-clean.png"
+          alt="Flores de primavera - campanillas, narcisos y azafranes"
+          className="w-[28rem] h-[28rem] xl:w-[32rem] xl:h-[32rem] 2xl:w-[36rem] 2xl:h-[36rem] object-contain"
+        />
+      </div>
+
+      <div className="absolute -right-8 top-1/2 transform -translate-y-3/4 opacity-40 hidden lg:block">
+        <img
+          src="/images/bee-botanical.png"
+          alt="Ilustración botánica con abeja"
+          className="w-80 h-80 xl:w-96 xl:h-96 object-contain"
+        />
+      </div>
+
+      {/* Medium size for tablets */}
+      <div className="absolute -left-8 top-1/2 transform -translate-y-1/4 opacity-30 hidden md:block lg:hidden">
+        <img src="/images/spring-flowers-clean.png" alt="Flores de primavera" className="w-64 h-64 object-contain" />
+      </div>
+
+      <div className="absolute -right-4 top-1/2 transform -translate-y-3/4 opacity-30 hidden md:block lg:hidden">
+        <img
+          src="/images/bee-botanical.png"
+          alt="Ilustración botánica con abeja"
+          className="w-48 h-48 object-contain"
+        />
+      </div>
+
+      {/* Small accents for mobile */}
+      <div className="absolute left-2 top-1/3 transform -translate-y-1/4 opacity-25 block md:hidden">
+        <img src="/images/spring-flowers-clean.png" alt="Flores de primavera" className="w-32 h-32 object-contain" />
+      </div>
+
+      <div className="absolute right-2 bottom-1/3 transform translate-y-1/4 opacity-25 block md:hidden">
+        <img
+          src="/images/bee-botanical.png"
+          alt="Ilustración botánica con abeja"
+          className="w-24 h-24 object-contain"
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="mb-8 animate-fade-in">
           <p className="text-lg md:text-xl text-stone-600 font-light mb-4">¡Nos casamos!</p>
 

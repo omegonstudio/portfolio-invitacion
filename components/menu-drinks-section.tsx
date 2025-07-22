@@ -7,27 +7,17 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { UtensilsCrossed, Wine } from "lucide-react"
 
 const menuData = {
-  entradas: ["Tabla de fiambres y quesos regionales", "Empanadas de carne y pollo", "Bruschettas variadas"],
-  principales: [
-    "Cordero patagónico a la parrilla",
-    "Salmón grillado con vegetales",
-    "Risotto de hongos (opción vegetariana)",
-  ],
-  postres: ["Torta de bodas tradicional", "Flan casero con dulce de leche", "Frutas de estación"],
-  bebidas: ["Agua mineral", "Gaseosas variadas", "Jugos naturales", "Café y té"],
+  recepcion: ["Copa de champagne de bienvenida"],
+  principal: ["Delicioso plato principal"],
+  postre: ["Postre especial"],
+  mesaDulce: ["Mesa dulce para cerrar con algo rico"],
 }
 
 const drinksData = {
-  sinAlcohol: ["Agua saborizada", "Gaseosas variadas", "Jugos naturales", "Limonadas y aguas frescas", "Café y té"],
-  conAlcohol: [
-    "Vinos tintos y blancos de la región",
-    "Champagne para brindis",
-    "Cerveza artesanal",
-    "Fernet con cola",
-    "Whisky y gin",
-    "Cócteles clásicos",
+  descripcion: [
+    "Vamos a tener barra con cerveza artesanal, variedad de vinos, fernet y gin tonic para brindar y disfrutar juntos toda la noche.",
   ],
-  tragosEspeciales: ["Mojito de la casa", "Pisco Sour", "Caipirinha", "Daiquiri de frutilla", "Gin Tonic premium"],
+  bebidas: ["Cerveza artesanal", "Variedad de vinos", "Fernet", "Gin Tonic"],
 }
 
 export function MenuDrinksSection() {
@@ -61,10 +51,10 @@ export function MenuDrinksSection() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Entradas
+                        Recepción
                       </h4>
                       <ul className="space-y-2">
-                        {menuData.entradas.map((item, index) => (
+                        {menuData.recepcion.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
@@ -75,10 +65,10 @@ export function MenuDrinksSection() {
 
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Platos Principales
+                        Plato Principal
                       </h4>
                       <ul className="space-y-2">
-                        {menuData.principales.map((item, index) => (
+                        {menuData.principal.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
@@ -89,10 +79,10 @@ export function MenuDrinksSection() {
 
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Postres
+                        Postre
                       </h4>
                       <ul className="space-y-2">
-                        {menuData.postres.map((item, index) => (
+                        {menuData.postre.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
@@ -103,10 +93,10 @@ export function MenuDrinksSection() {
 
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Bebidas Incluidas
+                        Mesa Dulce
                       </h4>
                       <ul className="space-y-2">
-                        {menuData.bebidas.map((item, index) => (
+                        {menuData.mesaDulce.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
@@ -141,10 +131,10 @@ export function MenuDrinksSection() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Bebidas sin Alcohol
+                        Descripción
                       </h4>
                       <ul className="space-y-2">
-                        {drinksData.sinAlcohol.map((item, index) => (
+                        {drinksData.descripcion.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
@@ -155,24 +145,10 @@ export function MenuDrinksSection() {
 
                     <div>
                       <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Bebidas con Alcohol
+                        Bebidas
                       </h4>
                       <ul className="space-y-2">
-                        {drinksData.conAlcohol.map((item, index) => (
-                          <li key={index} className="text-stone-700 flex items-start">
-                            <span className="text-stone-500 mr-2">•</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-semibold text-stone-800 mb-3 border-b border-stone-200 pb-2">
-                        Tragos Especiales
-                      </h4>
-                      <ul className="space-y-2">
-                        {drinksData.tragosEspeciales.map((item, index) => (
+                        {drinksData.bebidas.map((item, index) => (
                           <li key={index} className="text-stone-700 flex items-start">
                             <span className="text-stone-500 mr-2">•</span>
                             {item}
