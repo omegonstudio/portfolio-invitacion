@@ -8,6 +8,7 @@ import { DressCodeSection } from "@/components/dress-code-section"
 import { RsvpSection } from "@/components/rsvp-section"
 import { GiftRegistrySection } from "@/components/gift-registry-section"
 import { ClosingSection } from "@/components/closing-section"
+import { MenuDrinksSection } from "@/components/menu-drinks-section"
 
 export default function WeddingInvitation() {
   return (
@@ -19,6 +20,7 @@ export default function WeddingInvitation() {
         <OurStorySection />
         <CeremonySection />
         <ItinerarySection />
+        <MenuDrinksSection />
         <DressCodeSection />
         <RsvpSection />
         <GiftRegistrySection />

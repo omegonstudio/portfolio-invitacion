@@ -14,21 +14,22 @@ export function CeremonySection() {
                 <MapPin className="h-6 w-6 text-stone-600" />
                 <h3 className="text-2xl font-serif text-stone-800">Ubicación</h3>
               </div>
-              <p className="text-lg text-stone-700 mb-6">La Arboleda, Comodoro Rivadavia</p>
+              <p className="text-lg text-stone-700 mb-4">La Arboleda, Comodoro Rivadavia</p>
+              <p className="text-sm text-stone-600 mb-6">✓ Estacionamiento propio disponible</p>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Clock className="h-5 w-5 text-stone-600" />
                   <div>
-                    <p className="font-semibold text-stone-800">Ceremonia</p>
-                    <p className="text-stone-600">17:00 hs</p>
+                    <p className="font-semibold text-stone-800">Ceremonia Civil</p>
+                    <p className="text-stone-600">13:00 hs</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Heart className="h-5 w-5 text-stone-600" />
                   <div>
                     <p className="font-semibold text-stone-800">Fiesta</p>
-                    <p className="text-stone-600">20:00 hs</p>
+                    <p className="text-stone-600">18:00 hs</p>
                   </div>
                 </div>
               </div>
@@ -37,14 +38,14 @@ export function CeremonySection() {
 
           <div className="bg-white/70 backdrop-blur-sm border border-stone-200 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.234567890123!2d-67.5!3d-45.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ4JzAwLjAiUyA2N8KwMzAnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890123"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.123456789!2d-67.5326769!3d-45.8254595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde4550073474819:0xe347a5ffe381464e!2sLa+Arboleda!5e0!3m2!1ses!2sar!4v1234567890123"
               width="100%"
               height="300"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de la boda"
+              title="Ubicación de la boda - La Arboleda, Comodoro Rivadavia"
             ></iframe>
           </div>
         </div>
