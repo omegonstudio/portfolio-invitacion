@@ -3,8 +3,15 @@ import { Gift } from "lucide-react"
 
 export function GiftRegistrySection() {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+ <section className="relative py-20 px-4 overflow-hidden">
+      {/* Imagen decorativa fondo */}
+      <div className="absolute bottom-0 left-90 opacity-30 hidden lg:block pointer-events-none">
+        <img
+          src="/florescolaboracion.png"
+          alt="Flores en acuarela decorativas"
+          className="w-[36rem] h-auto xl:w-[42rem] 2xl:w-[48rem] object-contain"
+        />
+      </div>      <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-8">Colaboración</h2>
         <Card className="bg-white/70 backdrop-blur-sm border-stone-200">
           <CardContent className="p-8">

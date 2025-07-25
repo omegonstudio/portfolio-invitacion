@@ -3,7 +3,15 @@ import { MapPin, Clock, Heart } from "lucide-react"
 
 export function CeremonySection() {
   return (
-    <section className="py-20 px-4 bg-white/30">
+     <section className="relative py-20 px-4 overflow-hidden">
+      {/* Imagen decorativa fondo */}
+      <div className="absolute bottom-0 left-0 opacity-50 hidden lg:block pointer-events-none">
+        <img
+          src="/floresceremonia.png"
+          alt="Flores en acuarela decorativas"
+          className="w-[36rem] h-auto xl:w-[42rem] 2xl:w-[48rem] object-contain"
+        />
+      </div>
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">Ceremonia y Celebración</h2>
 

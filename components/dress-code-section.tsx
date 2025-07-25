@@ -18,7 +18,15 @@ const colorPalette = [
 
 export function DressCodeSection() {
   return (
-    <section className="py-20 px-4">
+     <section className="relative py-20 px-4 overflow-hidden">
+      {/* Imagen decorativa fondo */}
+      <div className="absolute bottom-0 rigth-50 opacity-90 hidden lg:block pointer-events-none">
+        <img
+          src="/floresacuarelavestimenta.png"
+          alt="Flores en acuarela decorativas"
+          className="w-[36rem] h-auto xl:w-[42rem] 2xl:w-[48rem] object-contain"
+        />
+      </div>
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">
           Dresscode / Vestimenta – Formal

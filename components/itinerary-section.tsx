@@ -48,9 +48,20 @@ const itineraryEvents = [
 
 export function ItinerarySection() {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">Itinerario del Día</h2>
+    <section className="relative py-20 px-4 overflow-hidden">
+      {/* Imagen decorativa fondo */}
+      <div className="absolute bottom-0 left-0 opacity-30 hidden lg:block pointer-events-none">
+        <img
+          src="/floresacuarelaitinerario.png"
+          alt="Flores en acuarela decorativas"
+          className="w-[36rem] h-auto xl:w-[42rem] 2xl:w-[48rem] object-contain"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">
+          Itinerario del Día
+        </h2>
 
         <div className="relative">
           {/* Timeline line */}
