@@ -38,7 +38,7 @@ const itineraryEvents = [
     side: "left" as const,
   },
   {
-    time: "18:00",
+    time: "18:00 a 20:00",
     title: "Fiesta",
     description: "Baile y celebración hasta altas horas",
     icon: "🎉",

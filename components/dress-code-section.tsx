@@ -13,6 +13,7 @@ const colorPalette = [
   { name: "Azul Océano", color: "#0097b2" },
   { name: "Celeste Claro", color: "#80eef2" },
   { name: "Naranja", color: "#ff9d09" },
+  { name: "Mostaza", color: "#f7d448" },
 ]
 
 export function DressCodeSection() {
