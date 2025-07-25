@@ -5,7 +5,7 @@ export function CeremonySection() {
   return (
      <section className="relative py-20 px-4 overflow-hidden">
       {/* Imagen decorativa fondo */}
-      <div className="absolute bottom-0 left-0 opacity-50 hidden lg:block pointer-events-none">
+      <div className="absolute bottom-0 right-0 opacity-50 hidden lg:block pointer-events-none">
         <img
           src="/floresceremonia.png"
           alt="Flores en acuarela decorativas"
