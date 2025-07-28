@@ -22,7 +22,7 @@ export function MusicControl() {
   return (
     <>
       <audio id="background-music" loop>
-        <source src="/placeholder-music.mp3" type="audio/mpeg" />
+      <source src="/music/2009.mp3" type="audio/mpeg" />
       </audio>
 
       <div className="fixed top-4 right-4 z-50">
