@@ -21,9 +21,9 @@ export function GiftRegistrySection() {
               es sumar a nuestra luna de miel. Podés hacerlo a través de este CBU.
             </p>
             <div className="bg-stone-100 rounded-lg p-6 mb-6">
-              <p className="font-semibold text-stone-800">Banco: [Nombre del Banco]</p>
-              <p className="text-stone-700">CBU: [Número de CBU]</p>
-              <p className="text-stone-700">Alias: [Alias de la cuenta]</p>
+{/*               <p className="font-semibold text-stone-800">Banco: [Nombre del Banco]</p>
+ */}              <p className="text-stone-700">CBU: 0000003100056487311966</p>
+              <p className="text-stone-700">Alias: BODA.ARIANAYJOSUE</p>
             </div>
           </CardContent>
         </Card>
