@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Pause } from "lucide-react"
 
@@ -19,10 +19,24 @@ export function MusicControl() {
     }
   }
 
+  useEffect(() => {
+    const audio = document.getElementById("background-music") as HTMLAudioElement
+    if (audio) {
+      audio.addEventListener('play', () => setIsPlaying(true))
+      audio.addEventListener('pause', () => setIsPlaying(false))
+    }
+    return () => {
+      if (audio) {
+        audio.removeEventListener('play', () => setIsPlaying(true))
+        audio.removeEventListener('pause', () => setIsPlaying(false))
+      }
+    }
+  }, [])
+
   return (
     <>
       <audio id="background-music" loop>
-      <source src="/music/2009.mp3" type="audio/mpeg" />
+        <source src="/music/2009.mp3" type="audio/mpeg" />
       </audio>
 
       <div className="fixed top-4 right-4 z-50">
