@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { TimelineItem } from "./timeline-item"
+import { Card, CardContent } from "@/components/ui/card";
+import { TimelineItem } from "./timeline-item";
 
 const itineraryEvents = [
   {
@@ -44,19 +44,20 @@ const itineraryEvents = [
     icon: "🎉",
     side: "right" as const,
   },
-]
+];
 
 export function ItinerarySection() {
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
-      {/* Imagen decorativa fondo */}
-      <div className="absolute bottom-0 left-0 opacity-30 hidden lg:block pointer-events-none">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-2 relative overflow-hidden">
+      {/* Imagen decorativa fondo – responsive */}
+      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
         <img
           src="/floresacuarelaitinerario.png"
           alt="Flores en acuarela decorativas"
-          className="w-[36rem] h-auto xl:w-[42rem] 2xl:w-[48rem] object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
+
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">
@@ -85,13 +86,14 @@ export function ItinerarySection() {
           <Card className="bg-white/70 backdrop-blur-sm border-stone-200">
             <CardContent className="p-6">
               <p className="text-stone-700 italic">
-                <strong>Nota:</strong> Los horarios son aproximados y pueden variar ligeramente. ¡Lo importante es
-                disfrutar juntos de este día especial!
+                <strong>Nota:</strong> Los horarios son aproximados y pueden
+                variar ligeramente. ¡Lo importante es disfrutar juntos de este
+                día especial!
               </p>
             </CardContent>
           </Card>
         </div>
       </div>
     </section>
-  )
+  );
 }

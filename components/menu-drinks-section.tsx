@@ -25,7 +25,7 @@ export function MenuDrinksSection() {
   const [drinksOpen, setDrinksOpen] = useState(false)
 
   return (
-    <section className="py-20 px-4 bg-white/30">
+    <section className="pb-20 pt-5 px-4 bg-white/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-stone-800 mb-12 text-center">Menú y Bebidas</h2>
 
