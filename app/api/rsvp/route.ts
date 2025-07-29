@@ -80,7 +80,7 @@ export async function POST(
     };
 
     /* rsvpDatabase.push(rsvpEntry) */
-    await fetch("https://hook.us2.make.com/m9e96ksu7pef8k9j3b3ewtpvy1ot2y2m", {
+    await fetch("", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(rsvpEntry),
