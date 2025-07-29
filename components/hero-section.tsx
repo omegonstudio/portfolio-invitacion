@@ -67,7 +67,8 @@ export function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-stone-800 mb-6">
+         <h1 className="text-4xl md:text-6xl lg:text-7xl font-times text-stone-800 mb-6">
+
             Josué <span className="text-stone-500">&</span> Ariana
           </h1>
 
