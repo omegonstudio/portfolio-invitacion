@@ -24,13 +24,13 @@ export function GiftRegistrySection() {
             <p className="text-lg text-stone-700 mb-6">
               Gracias por acompañarnos en este momento tan especial. Si querés
               hacernos un regalo, lo que más deseamos es sumar a nuestra luna de
-              miel. Podés hacerlo a través de este CVU.
+              miel. Podés hacerlo a través de este CBU.
             </p>
             <div className="bg-stone-100 rounded-lg p-6 mb-6">
               {/*               <p className="font-semibold text-stone-800">Banco: [Nombre del Banco]</p>
                */}{" "}
-              <p className="text-stone-700">CVU: 0000003100056487311966</p>
-              <p className="text-stone-700">Alias: BODA.ARIANAYJOSUE</p>
+              <p className="text-stone-700">CBU: 000000XXXXXXXXXXXXX</p>
+              <p className="text-stone-700">Alias: OMEGON.INFO</p>
             </div>
           </CardContent>
         </Card>
